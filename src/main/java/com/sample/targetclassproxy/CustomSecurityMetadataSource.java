@@ -13,8 +13,8 @@ public class CustomSecurityMetadataSource extends AbstractMethodSecurityMetadata
         //Expect MyRepository in targetClass here
 
         if (Repository.class.isAssignableFrom(method.getDeclaringClass())) {
-            System.out.println("targetClass proxy: " + targetClass);
-            System.out.println("method: " + method);
+            System.out.println("targetClass proxy which should be MyRepository interface: " + targetClass);
+            System.out.println("method which shows declaring class: " + method);
             System.out.println();
         }
 
